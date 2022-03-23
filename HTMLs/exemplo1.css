@@ -1,0 +1,29 @@
+main{
+    background-color: blue;
+}
+
+body{
+    background-color: FireBrick;
+    height: 100vw;
+}
+
+.cabecalho_site{
+    width: 1000px;
+    margin-left:auto 0;
+}
+
+.botoes{
+
+}
+
+main,footer,nav{
+    margin-bottom: 2vw;
+    margin-top: 5vw;
+    border-style: inset;
+}
+
+.cabecalho_site{
+ float: right;
+ margin-right: 5vm;
+ border-style: solid black;
+}
