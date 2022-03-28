@@ -1,0 +1,82 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.cabecalho, .rodape,.conteudo_main,.side_menu{
+    border: solid 2px green;
+}
+
+.cabecalho{
+    grid-area: cabecalho;
+    display: flex;
+}
+
+.cabecalho > img{
+    max-height: 90%;
+}
+.rodape{
+    grid-area: rodape;
+}
+
+.side_menu{
+    grid-area: side_menu;
+}
+
+.conteudo_main{
+    grid-area: conteudo_main;
+}
+
+.body{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 15% 1fr;
+    grid-template-rows: 10% auto 10%;
+    grid-template-areas: 
+        "cabecalho cabecalho"
+        "side_menu conteudo_main"
+        "rodape rodape";
+}
+
+.itens_menu_sup{
+    list-style: none;
+    padding: 10px;
+    margin: 10px;
+}
+
+.itens_side_menu{
+    list-style: none;
+    padding: 10px;
+    margin: 10px;
+    
+}
+
+.blocos{
+    background-color: aliceblue;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.blocos_conteudo{
+    flex: 1 ;
+    border: solid 2px blue;
+    border-radius: 10px;
+    height: 200px;
+    min-width: 250px;
+    margin: 10px;
+    padding: 10px;
+   
+}
+
+.menu_superior{
+   display: flex;
+  
+
+}
+
+.menu_cabecalho{
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+}
